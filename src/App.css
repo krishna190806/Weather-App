@@ -1,0 +1,93 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-app {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  width: 100%;
+  max-width: 500px;
+}
+
+.weather-app h1 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.search-box {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+}
+
+input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #646cff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #535bf2;
+}
+
+.weather-details {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.weather-details h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.weather-details p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.loading, .error {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
